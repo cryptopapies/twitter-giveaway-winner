@@ -101,6 +101,9 @@ def main(args: List[str]) -> int:
         print("No eligible winner found")
         return 1
 
+    print("eligible winners:")
+    for eligible in eligible_winners:
+        print(f"@{eligible}")
     winner = choice(eligible_winners)
     print(f"The winner is: {winner}")
 
